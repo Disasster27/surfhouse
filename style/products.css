@@ -1,0 +1,105 @@
+.products {
+  background-color: #f8f8f8; }
+
+.productsBlok_named {
+  color: #707070;
+  font-family: "Roboto - Black Italic";
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: inline-block; }
+
+.productsBlok_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px 30px; }
+
+.productArrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .productArrow div {
+    padding: 10px;
+    cursor: pointer; }
+    .productArrow div:hover {
+      background-color: #eaeaea; }
+
+.productItem_dox {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.product_item {
+  padding: 10px;
+  background-color: #ffffff;
+  display: inline-block;
+  margin-bottom: 30px;
+  position: relative; }
+  .product_item:hover {
+    -webkit-box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16);
+            box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16); }
+  .product_item img {
+    display: block;
+    width: 250px;
+    height: 235px;
+    background-color: #eaeaea; }
+
+.product_title {
+  height: 70px;
+  padding: 15px 15px 0 25px;
+  color: #333333;
+  font-family: "Roboto - Black Italic";
+  font-weight: 400;
+  line-height: 18px; }
+  .product_title div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .product_title p {
+    display: inline-block;
+    font-size: 14px; }
+  .product_title span {
+    display: block;
+    font-size: 18px; }
+
+.product_subtitle p {
+  text-transform: uppercase; }
+.product_subtitle span {
+  color: #e24602;
+  font-size: 14px;
+  text-decoration: line-through; }
+
+.statusNew:after,
+.statusHot:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 46px;
+  height: 46px;
+  text-align: right;
+  padding: 10px 5px 0 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Roboto;
+  font-size: 9px;
+  font-weight: 400;
+  text-transform: uppercase; }
+
+.statusNew:after {
+  content: "new";
+  background-image: url(../image/cornerRed.png);
+  color: #ffffff; }
+
+.statusHot:after {
+  content: "hot";
+  background-image: url(../image/cornerYell.png);
+  color: #000000; }

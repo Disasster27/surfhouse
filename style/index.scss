@@ -1,0 +1,139 @@
+@import "color";
+
+body {
+	background: linear-gradient($headerBlue 700px, $mainGray 700px);
+}
+
+.slider {
+	width: 100%;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.slider_body {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex: 1;
+}
+.slider_area {
+	padding-left: 50%;
+}
+.slider_title {
+	color: $lightyellow;
+	font-family: Raleway;
+	font-size: 18px;
+	font-weight: 400;
+	margin-bottom: 60px;
+	h3 {
+		font-family: "Raleway - Extra Bold";
+		font-size: 48px;
+		font-weight: 700;
+		line-height: 34px;
+		text-transform: uppercase;
+	}
+}
+.slider_button {
+	display: inline-block;
+	color: #000000;
+	font-family: "Raleway - Heavy";
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+	padding: 20px 30px;
+	background-color: $lightyellow; 
+	cursor: pointer;
+	&:hover {
+		text-shadow: 0 0 3px $darkGray;
+//		box-shadow: 0 0 8px #ffffff;
+	}
+}
+.slides_arrow {
+	display: flex;
+	background-color: $white;
+	cursor: pointer;
+	margin-left: 50px;
+	img {
+		padding: 16px 9px;
+	}
+	&>div:hover {
+		background-color: $darkYellow;
+	}
+}
+.slider_item {
+	height: 45px;
+	padding-left: 210px;
+	span {
+		display: inline-block;
+		width: 40px;
+		height: 4px;
+		background-color: $darkYellow;
+		cursor: pointer;
+		&+span {
+			margin-left: 10px;
+		}
+	}
+}
+
+
+
+
+.boxWelcom {
+	width: 270px;
+	background-color: #fff51f;
+	padding: 80px 25px;
+	color: $darkGray;
+	font-family: Raleway;
+	font-weight: 700;
+	margin-bottom: 45px;
+	h3 {
+		font-size: 30px;
+		line-height: 30px;
+		text-transform: uppercase;
+		margin-bottom: 25px;
+	}
+	p {
+		font-size: 18px;
+		font-style: italic;
+		line-height: 14px;
+	}
+}
+
+.instaFeed {
+	background-color: $backgraundItemGray;
+	padding: 25px 0 60px 0;
+	text-align: center;
+	p {
+		
+		color: $darkGray;
+		font-family: "Roboto - Black Italic";
+		font-size: 22px;
+		font-weight: 400;
+		position: relative;
+		display: inline-block;
+		margin-bottom: 30px;
+		&:before {
+			content: "";
+			width: 28px;
+			height: 28px;
+			background-image: url(../image/insta_icon.png);
+			position: absolute;
+			left: -36px;
+		}
+	}
+	span {
+		font-size: 18px;
+	}
+}
+.instaLine {
+	
+}
+.livello {
+	width: 185px;
+	height: 185px;
+	background-color: $white; 
+}
+	
+
+@import "articlesExperts";
