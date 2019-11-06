@@ -37,3 +37,15 @@
 		box-shadow: 0 0 3px $darkGray;
 	}
 }
+@mixin productBox_sideArrow {
+	content: "";
+	position: absolute;
+	width: 12px;
+	height: 33px;
+	background-color: $menuColor;
+	top: 195px;
+	cursor: pointer;
+	padding: 5px 14px;
+	background-repeat: no-repeat;
+	background-position: center;
+}

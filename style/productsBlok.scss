@@ -1,4 +1,5 @@
 @import "color";
+@import "mixin";
 
 .products {
 	background-color: $mainGray;
@@ -110,4 +111,18 @@
 	content: "hot";
 	background-image: url(../image/cornerYell.png);
 	color: #000000;
+}
+.productBox_sideArrow {
+	position: relative;
+	&::before {
+		z-index: 5;
+		@include productBox_sideArrow;
+		background-image: url(../image/arrow_sx.png);
+		
+	}
+	&::after {
+		@include productBox_sideArrow;
+		right: 0;
+		background-image: url(../image/arrow_dx.png);
+	}
 }

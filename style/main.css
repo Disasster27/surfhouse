@@ -380,6 +380,7 @@ footer span + a:last-child {
   font-size: 12px;
   font-weight: 400;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .bancCard > img + img {

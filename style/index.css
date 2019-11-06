@@ -380,6 +380,7 @@ footer span + a:last-child {
   font-size: 12px;
   font-weight: 400;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .bancCard > img + img {
@@ -995,5 +996,55 @@ body {
   content: "hot";
   background-image: url(../image/cornerYell.png);
   color: #000000;
+}
+
+.productBox_sideArrow {
+  position: relative;
+}
+
+.productBox_sideArrow:hover:before {
+  -webkit-box-shadow: 0 0 4px #26d2fc;
+          box-shadow: 0 0 4px #26d2fc;
+  background-color: #fff;
+}
+
+.productBox_sideArrow::before {
+  z-index: 5;
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 33px;
+  background-color: #26d2fc;
+  top: 195px;
+  cursor: pointer;
+  padding: 5px 14px;
+  background-image: url(../image/arrow_sx.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.productBox_sideArrow::before:hover {
+  -webkit-box-shadow: 0 0 4px #26d2fc;
+          box-shadow: 0 0 4px #26d2fc;
+}
+
+.productBox_sideArrow::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 33px;
+  background-color: #26d2fc;
+  top: 195px;
+  cursor: pointer;
+  padding: 5px 14px;
+  right: 0;
+  background-image: url(../image/arrow_dx.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.productBox_sideArrow::after:hover {
+  -webkit-box-shadow: 0 0 4px #26d2fc;
+          box-shadow: 0 0 4px #26d2fc;
 }
 /*# sourceMappingURL=index.css.map */
