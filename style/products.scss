@@ -1,113 +1,71 @@
 @import "color";
+@import "mixin";
 
-.products {
-	background-color: $mainGray;
-}
+@import "main";
+@import "sidebarTagsCart";
+@import "productsBlok";
+@import "category";
 
-.productsBlok_named {
-	color: #707070;
-	font-family: "Roboto - Black Italic";
-	font-size: 22px;
-	font-weight: 400;
-	text-transform: uppercase;
-	display: inline-block;
-}
-.productsBlok_header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 25px 30px;
-}
+// .navigation {
+//     margin: 30px 20px;
+//     color: $navigationGray;
+//     font-size: 12px;
+//     a {
+//         font-family: Roboto;
+//         font-weight: 400;
+//         color: $navigationGray;
+//         @include textShadow;
+//     }
+//     .active {
+//         background-color: $darkYellow;
+//     }
+    
+// }
 
-.products_new {
-	
-}
-.productArrow {
-	display: flex;
-	div {
-		padding: 10px;
-		cursor: pointer;
-		&:hover {
-		background-color: $backgraundItemGray;
-	}
-	}
-	
-}
-
-.productItem_dox {
-	flex-wrap: wrap;
-}
-.product_item {
-	padding: 10px;
-	background-color: $white;
-	display: inline-block;
-	margin-bottom: 30px;
-	position: relative;
-	&:hover {
-			box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16);
-		}
-	img {
-		display: block;
-		width: 250px;
-		height: 235px;
-		background-color: $backgraundItemGray;
-	}
-}
-.product_title {
-	height: 70px;
-	padding: 15px 15px 0 25px;
-	color: $darkGray;
-	font-family: "Roboto - Black Italic";
-	font-weight: 400;
-	line-height: 18px;
-	div{
-		display: flex;
-		justify-content: space-between;
-	}
-	p {
-			display: inline-block;
-			font-size: 14px;
-		}
-		span {
-			display: block;
-			font-size: 18px;
-		}
-}
-.product_subtitle {
-	p {
-		text-transform: uppercase;
-	}
-	span {
-		color: $darkminiCartColor;
-		font-size: 14px;
-		text-decoration: line-through;
-		
-	}
+.sortBox {
+    padding: 30px 10px;
+    color: $darkGray;
+    font-family: Roboto;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+    select {
+        border: 1px solid #d6d4d4;
+        color: $navigationGray;
+        font-family: Roboto;
+        font-size: 12px;
+        font-weight: 400;
+        margin-right: 10px;
+    }
+    span {
+        margin-right: 10px;
+    }
+    i {
+        color: $navigationGray;
+        margin: 0 10px;
+        cursor: pointer;
+    }
+    .activeView {
+        color: $menuColor;
+    }
 }
 
 
-.statusNew:after,
-.statusHot:after {
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 46px;
-	height: 46px;
-	text-align: right;
-	padding: 10px 5px 0 0;
-	box-sizing: border-box;
-	font-family: Roboto;
-	font-size: 9px;
-	font-weight: 400;
-	text-transform: uppercase;
+.pagination {
+    span {
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        margin-right: 0;
+        cursor: pointer; 
+        text-align: center;
+        &:hover {
+            background-color: $backgroundItemGray;
+        }
+    }
 }
-.statusNew:after {
-	content: "new";
-	background-image: url(../image/cornerRed.png);
-	color: $white;
-}
-.statusHot:after {
-	content: "hot";
-	background-image: url(../image/cornerYell.png);
-	color: #000000;
+.activePage {
+    background-color: $menuColor;
+    color: $white;
 }

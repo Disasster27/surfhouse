@@ -1,0 +1,39 @@
+@mixin flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+@mixin textShadow {
+	&:hover {
+		text-shadow: 0 0 3px $darkGray;
+   }
+}
+@mixin miniCartDIV {
+	width: 135px;
+	padding: 10px;
+	text-align: center;
+	cursor: pointer;
+}
+@mixin miniCartP {
+	display: inline-block;
+	font-family: Raleway;
+	font-size: 12px;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 0.3px;
+}
+@mixin span {
+	width: 25px;
+	height: 30px;
+	background-color: #ffffff;
+	display: inline-block;
+	text-align: center;
+	padding-top: 10px;
+	cursor: pointer;
+	&+span {
+		margin-left: 10px;
+	}
+	&:hover {
+		box-shadow: 0 0 3px $darkGray;
+	}
+}

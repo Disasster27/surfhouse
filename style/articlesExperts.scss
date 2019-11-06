@@ -1,4 +1,5 @@
 @import "color";
+@import "mixin";
 
 .articlesExperts {
 	width: 270px;
@@ -18,9 +19,7 @@
 		font-weight: 900;
 		cursor: pointer;
 		margin-top: 20px;
-		&:hover {
-			 text-shadow: 0 0 3px $darkGray;
-		}
+		@include textShadow;
 	}
 }
 .assideReview {

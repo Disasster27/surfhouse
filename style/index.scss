@@ -1,4 +1,6 @@
 @import "color";
+@import "main";
+@import "mixin";
 
 body {
 	background: linear-gradient($headerBlue 700px, $mainGray 700px);
@@ -44,10 +46,7 @@ body {
 	padding: 20px 30px;
 	background-color: $lightyellow; 
 	cursor: pointer;
-	&:hover {
-		text-shadow: 0 0 3px $darkGray;
-//		box-shadow: 0 0 8px #ffffff;
-	}
+	@include textShadow;
 }
 .slides_arrow {
 	display: flex;
@@ -101,7 +100,7 @@ body {
 }
 
 .instaFeed {
-	background-color: $backgraundItemGray;
+	background-color: $backgroundItemGray;
 	padding: 25px 0 60px 0;
 	text-align: center;
 	p {
@@ -135,5 +134,6 @@ body {
 	background-color: $white; 
 }
 	
-
+@import "sidebarTagsCart";
 @import "articlesExperts";
+@import "productsBlok";

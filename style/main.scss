@@ -1,11 +1,6 @@
 @import "color";
+@import "mixin";
 
-
-@mixin flex {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
 
 .none {
 	display: none;
@@ -29,7 +24,7 @@ body {
 	height: 100%;
 }
 header {
-	height: 160px;
+	// height: 160px;
 	nav {
 		height: 100%;
 	}
@@ -42,14 +37,29 @@ header {
 }
 .socialMenu {
 	width: 160px;
-	color: #f8f8f8;
+	color: $mainGray;
 	@include flex;
 	i {
-		color: #f8f8f8;
+		color: $mainGray;
 	}
 }
 
 
+.navigation {
+    margin: 30px 20px;
+    color: $navigationGray;
+    font-size: 12px;
+    a {
+        font-family: Roboto;
+        font-weight: 400;
+        color: $navigationGray;
+        @include textShadow;
+    }
+    .active {
+        background-color: $darkYellow;
+    }
+    
+}
 
 
 main {
@@ -76,11 +86,14 @@ main {
 
 .menu {
 	width: 270px;
-	background-color: $menuColir;
+	background-color: $menuColor;
 	margin-bottom: 30px;
+	// &.category {
+	// 	background-color: $headerBlue;
+	// }
 	li {
 		padding-left: 40px;
-		color: #000000;
+		color: $black;
 		font-family: "Roboto - Black";
 		font-size: 14px;
 		font-weight: 400;
@@ -239,6 +252,15 @@ footer {
 		font-weight: 400;
 		line-height: 18px;
 	}	
+	span+a {
+		color: $white;
+		font-family: Roboto;
+		font-size: 14px;
+		font-weight: 400;
+		&:last-child {
+			color: $darkYellow;
+		}
+	}
 }
 .footer_wrapper {
 	height: 300px;
@@ -300,15 +322,6 @@ footer {
 	}
 	
 }
-span+a {
-	color: $white;
-	font-family: Roboto;
-	font-size: 14px;
-	font-weight: 400;
-	&:last-child {
-		color: $darkYellow;
-	}
-}
 .copyright {
 	height: 50px;
 	background-color: $darkGray;
@@ -317,11 +330,3 @@ span+a {
 		color: #dad9d9;
 	}
 }
-
-
-
-
-
-@import "index";
-@import "products";
-@import "sidebarTagsCart";
