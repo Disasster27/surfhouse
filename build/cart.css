@@ -345,218 +345,6 @@ footer {
     display: inline-block;
     color: #dad9d9; }
 
-.miniCard {
-  width: 270px;
-  background-color: #fb4d01;
-  margin-bottom: 10px; }
-
-.auth {
-  background-color: #f8f8f8;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex; }
-  .auth div {
-    width: 135px;
-    padding: 10px;
-    text-align: center;
-    cursor: pointer; }
-    .auth div:hover {
-      background-color: #eaeaea; }
-  .auth p {
-    display: inline-block;
-    font-family: Raleway;
-    font-size: 12px;
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 0.3px;
-    color: #fb4d01; }
-
-.miniCart_body {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column; }
-
-.miniCart_info {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex; }
-
-.miniCart_totalPrise {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  padding: 15px 0 15px 80px;
-  position: relative;
-  cursor: pointer; }
-  .miniCart_totalPrise:hover {
-    background-color: #e24602; }
-  .miniCart_totalPrise:before {
-    content: "";
-    width: 41px;
-    height: 35px;
-    position: absolute;
-    background-image: url(../image/icon_cart.png);
-    left: 26px; }
-
-.miniCart_prise {
-  color: #ffffff;
-  font-family: "Raleway - Semi Bold";
-  font-size: 18px;
-  font-weight: 400;
-  margin-bottom: 5px; }
-
-.miniCart_item {
-  color: #faef03;
-  font-family: Raleway;
-  font-size: 12px;
-  font-weight: 400; }
-
-.miniCart_editButton {
-  padding: 15px 20px;
-  cursor: pointer; }
-  .miniCart_editButton:hover {
-    background-color: #e24602; }
-  .miniCart_editButton span {
-    display: block;
-    width: 25px;
-    height: 30px;
-    color: #333333;
-    font-family: Raleway;
-    font-size: 10px;
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 0.75px;
-    padding-top: 22px;
-    position: relative; }
-    .miniCart_editButton span:before {
-      content: "\1F7A8";
-      color: #faef03;
-      position: absolute;
-      font-size: 27px;
-      top: 0; }
-
-.miniCart_button {
-  background-color: #fb4d01;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex; }
-  .miniCart_button div {
-    width: 135px;
-    padding: 10px;
-    text-align: center;
-    cursor: pointer; }
-    .miniCart_button div:hover {
-      background-color: #e24602; }
-  .miniCart_button p {
-    color: #ffffff;
-    display: inline-block;
-    font-family: Raleway;
-    font-size: 12px;
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 0.3px; }
-
-.cart_search {
-  background-color: transparent; }
-  .cart_search form {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex; }
-  .cart_search input[type="text"] {
-    background-color: #eaeaea;
-    padding: 10px;
-    height: 34px;
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-        -ms-flex: 1;
-            flex: 1; }
-    .cart_search input[type="text"]::-webkit-input-placeholder {
-      color: #0c0c0c;
-      font-family: Raleway;
-      font-size: 10px;
-      font-weight: 400;
-      text-transform: uppercase; }
-    .cart_search input[type="text"]::-moz-placeholder {
-      color: #0c0c0c;
-      font-family: Raleway;
-      font-size: 10px;
-      font-weight: 400;
-      text-transform: uppercase; }
-    .cart_search input[type="text"]:-ms-input-placeholder {
-      color: #0c0c0c;
-      font-family: Raleway;
-      font-size: 10px;
-      font-weight: 400;
-      text-transform: uppercase; }
-    .cart_search input[type="text"]::-ms-input-placeholder {
-      color: #0c0c0c;
-      font-family: Raleway;
-      font-size: 10px;
-      font-weight: 400;
-      text-transform: uppercase; }
-    .cart_search input[type="text"]::placeholder {
-      color: #0c0c0c;
-      font-family: Raleway;
-      font-size: 10px;
-      font-weight: 400;
-      text-transform: uppercase; }
-  .cart_search button {
-    display: block;
-    background-color: #333333;
-    border: 0;
-    height: 34px;
-    padding: 11px;
-    cursor: pointer; }
-    .cart_search button:hover {
-      background-color: #050505; }
-
-.tagsBlok {
-  width: 270px;
-  padding: 30px;
-  background-color: #ffffff;
-  margin-bottom: 30px; }
-  .tagsBlok h3 {
-    color: #000000;
-    font-family: "Roboto - Black Italic";
-    font-size: 24px;
-    font-weight: 400;
-    margin-bottom: 20px; }
-  .tagsBlok span {
-    display: inline-block;
-    background-color: #e9e9e9;
-    padding: 10px 11px 6px;
-    cursor: pointer;
-    color: #333333;
-    font-family: Roboto;
-    font-size: 12px;
-    font-weight: 400;
-    margin-bottom: 8px; }
-    .tagsBlok span:hover {
-      background-color: #faef03;
-      color: #000000;
-      font-weight: bold;
-      padding: 10px 10px 6px; }
-  .tagsBlok p {
-    color: #000000;
-    font-family: "Roboto - Black Italic";
-    font-size: 14px;
-    font-weight: 900;
-    cursor: pointer;
-    margin-top: 20px; }
-    .tagsBlok p:hover {
-      text-shadow: 0 0 3px #333333; }
-
 .products {
   background-color: #f8f8f8; }
 
@@ -707,40 +495,167 @@ footer {
 .productBox_sideArrow_yellow::before, .productBox_sideArrow_yellow::after {
   background-color: #faef03; }
 
-.sortBox {
-  padding: 30px 10px;
-  color: #333333;
-  font-family: Roboto;
-  font-size: 11px;
-  font-weight: 400;
-  line-height: 20px;
-  text-transform: uppercase; }
-  .sortBox select {
-    border: 1px solid #d6d4d4;
+.order_step {
+  padding-bottom: 30px; }
+  .order_step ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
     color: #aaaaaa;
     font-family: Roboto;
-    font-size: 12px;
+    font-size: 24px;
     font-weight: 400;
-    margin-right: 10px; }
-  .sortBox span {
-    margin-right: 10px; }
-  .sortBox i {
-    color: #aaaaaa;
-    margin: 0 10px;
+    text-transform: uppercase; }
+    .order_step ul li {
+      padding-left: 75px; }
+
+.content {
+  background-color: #f8f8f8; }
+
+.productCart {
+  width: 100%; }
+  .productCart table {
+    width: 100%; }
+    .productCart table tr {
+      border-bottom: 1px solid #e6e6e6; }
+    .productCart table th {
+      color: #333333;
+      font-family: "Roboto - Medium Italic";
+      font-size: 12px;
+      font-weight: 400;
+      text-transform: uppercase;
+      text-align: left; }
+    .productCart table .productCart_img {
+      display: inline-block;
+      width: 70px;
+      height: 110px;
+      background-color: #eaeaea;
+      margin: 15px 15px 10px 10px; }
+    .productCart table p {
+      width: 186px;
+      color: #707070;
+      font-family: Roboto;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 16px;
+      margin: 0 0 10px 0; }
+    .productCart table .socialMenu_cart {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      margin-bottom: 20px; }
+      .productCart table .socialMenu_cart li {
+        margin-right: 20px; }
+      .productCart table .socialMenu_cart i {
+        color: #333333; }
+    .productCart table .cart_quantity {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    .productCart table input[type="number"] {
+      width: 36px;
+      height: 28px;
+      border: 1px solid #efefef;
+      background-color: #ffffff;
+      margin: 0 7px; }
+    .productCart table input[type="number"]::-webkit-outer-spin-button,
+    .productCart table input[type="number"]::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0; }
+    .productCart table .minQty,
+    .productCart table .plusQty {
+      background-color: #ffffff;
+      padding: 3px 5px;
+      cursor: pointer; }
+    .productCart table span {
+      color: #666669;
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: 400; }
+
+.delete {
+  width: 14px;
+  height: 15px;
+  cursor: pointer; }
+
+.delete::before {
+  content: "\1F7A8";
+  color: #ff0000;
+  font-size: 17px; }
+
+.coupon {
+  margin-top: 20px; }
+  .coupon p {
+    color: #333333;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: italic;
+    text-transform: uppercase;
+    padding-bottom: 15px; }
+  .coupon input {
+    width: 241px;
+    height: 35px;
+    border: 1px solid rgba(0, 0, 0, 0.07);
+    background-color: #ffffff;
+    padding-left: 8px;
+    margin-left: 10px; }
+  .coupon button {
+    border: none;
+    margin-right: 20px;
+    background-color: #333333;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 13px 17px;
     cursor: pointer; }
-  .sortBox .activeView {
-    color: #26d2fc; }
+  .coupon a {
+    float: right;
+    margin: 7px 20px 0 0;
+    color: #333333;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: italic;
+    text-decoration: underline; }
 
-.pagination span {
-  width: 20px;
-  height: 20px;
-  display: inline-block;
-  margin-right: 0;
-  cursor: pointer;
-  text-align: center; }
-  .pagination span:hover {
-    background-color: #eaeaea; }
+.reviewCart {
+  background-color: #fb4d01;
+  padding: 30px 20px;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase; }
+  .reviewCart h4 {
+    font-family: "Roboto - Black";
+    font-size: 16px;
+    text-align: center; }
+  .reviewCart button {
+    border: none;
+    width: 230px;
+    background-color: #333333;
+    font-size: 28px;
+    color: #ffffff;
+    padding: 10px 0;
+    text-transform: uppercase;
+    cursor: pointer; }
 
-.activePage {
-  background-color: #26d2fc;
-  color: #ffffff; }
+.reviewCart_info {
+  margin: 50px 0 60px 0; }
+  .reviewCart_info p {
+    text-align: left; }
+    .reviewCart_info p span {
+      float: right; }
+    .reviewCart_info p + p {
+      padding-top: 30px; }
+    .reviewCart_info p:last-child {
+      font-family: "Roboto - Black";
+      font-size: 16px; }
