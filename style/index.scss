@@ -1,11 +1,8 @@
-@import "color";
 @import "main";
-@import "mixin";
 
 body {
 	background: linear-gradient($headerBlue 700px, $mainGray 700px);
 }
-
 .slider {
 	width: 100%;
 	height: 500px;
@@ -24,12 +21,12 @@ body {
 }
 .slider_title {
 	color: $lightyellow;
-	font-family: Raleway;
+	font-family: "Raleway-Regular";
 	font-size: 18px;
 	font-weight: 400;
 	margin-bottom: 60px;
 	h3 {
-		font-family: "Raleway - Extra Bold";
+		font-family: "Raleway-ExtraBold";
 		font-size: 48px;
 		font-weight: 700;
 		line-height: 34px;
@@ -38,8 +35,8 @@ body {
 }
 .slider_button {
 	display: inline-block;
-	color: #000000;
-	font-family: "Raleway - Heavy";
+	color: $black;
+	font-family: "Raleway-Heavy";
 	font-size: 14px;
 	font-weight: 400;
 	text-transform: uppercase;
@@ -74,16 +71,12 @@ body {
 		}
 	}
 }
-
-
-
-
 .boxWelcom {
 	width: 270px;
-	background-color: #fff51f;
+	background-color: $lightyellow;
 	padding: 80px 25px;
 	color: $darkGray;
-	font-family: Raleway;
+	font-family: "Raleway-Regular";
 	font-weight: 700;
 	margin-bottom: 45px;
 	h3 {
@@ -98,15 +91,13 @@ body {
 		line-height: 14px;
 	}
 }
-
 .instFeed {
 	background-color: $backgroundItemGray;
 	padding: 25px 0 60px 0;
 	text-align: center;
 	p {
-		
 		color: $darkGray;
-		font-family: "Roboto - Black Italic";
+		font-family: "Roboto-Black Italic";
 		font-size: 22px;
 		font-weight: 400;
 		position: relative;
@@ -125,15 +116,11 @@ body {
 		font-size: 18px;
 	}
 }
-.instaLine {
-	
-}
 .livello {
 	width: 185px;
 	height: 185px;
 	background-color: $white; 
-}
-	
+}	
 @import "sidebarTagsCart";
 @import "articlesExperts";
 @import "productsBlok";

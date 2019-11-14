@@ -1,38 +1,24 @@
-@import "color";
-@import "mixin";
-
 @import "main";
-
-
 
 .header_map {
 	background-image: url(../image/maps.jpg);
 	height: 350px;
-	
 	nav {
 		background-color: RGBA(193, 193, 193, .3);
-	}
-	.socialMenu {
-	}
-	
+	}	
 }
-
 .contact_blok {
 	margin-top: 90px;
 	display: flex;
 }
-
 .contact_form {
 	padding-right: 25px;
 	border-right: 1px solid RGBA(193, 193, 193, .5);
-	font-family: Roboto;
+	font-family: "Roboto-Regular";
 		font-size: 12px;
 		font-weight: 400;
 	label {
 		color: $darkGray;
-//		font-family: Roboto;
-//		font-size: 12px;
-//		font-weight: 400;
 		text-transform: uppercase;
 	}
 	input, 
@@ -45,9 +31,6 @@
 		margin: 10px 0 35px 0;
 		&::placeholder {
 			color: $navigationGray;
-//			font-family: Roboto;
-//			font-size: 12px;
-//			font-weight: 400;
 		}
 	}
 	textarea {
@@ -57,7 +40,7 @@
 }
 .contact_address {
 	color: $fontGray;
-	font-family: Roboto;
+	font-family: "Roboto-Regular";
 	font-size: 12px;
 	font-weight: 400;
 	line-height: 14px;
@@ -72,7 +55,7 @@
 	}
 	h3 {
 		color: $darkGray;
-		font-family: "Roboto - Black";
+		font-family: "Roboto-Black";
 		font-size: 18px;
 		margin-bottom: 15px;
 	}

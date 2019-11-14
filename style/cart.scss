@@ -1,6 +1,3 @@
-@import "color";
-@import "mixin";
-
 @import "main";
 @import "productsBlok";
 @import "cartStep";
@@ -14,29 +11,27 @@
 	table {
 		width: 100%;
 		tr {
-			border-bottom: 1px solid #e6e6e6;
+			border-bottom: 1px solid $backgroundItemGray;
 		}
 		th {
-		color: #333333;
-		font-family: "Roboto - Medium Italic";
+		color: $darkGray;
+		font-family: "Roboto-BlackItalic";
 		font-size: 12px;
 		font-weight: 400;
 		text-transform: uppercase;
 		text-align: left;
 		}
-		td {
-		}
 		.productCart_img {
 			display: inline-block;
 			width: 70px;
 			height: 110px;
-			background-color: #eaeaea;
+			background-color: $backgroundItemGray;
 			margin: 15px 15px 10px 10px;
 		}
 		p {
 			width: 186px;
-			color: #707070;
-			font-family: Roboto;
+			color: $fontGray;
+			font-family: "Roboto-Regular";
 			font-size: 12px;
 			font-weight: 400;
 			line-height: 16px;
@@ -49,7 +44,7 @@
 				margin-right: 20px;
 			}
 			i {
-				color: #333333;
+				color: $darkGray;
 			}
 		}
 		.cart_quantity {
@@ -59,8 +54,8 @@
 		input[type="number"] {
 			width: 36px;
 			height: 28px;
-			border: 1px solid #efefef;
-			background-color: #ffffff;
+			border: 1px solid $backgroundItemGray;
+			background-color: $white;
 			margin: 0 7px;
 		}
 		input[type="number"]::-webkit-outer-spin-button,
@@ -75,8 +70,8 @@
 			cursor: pointer;
 		}
 		span {
-			color: #666669;
-			font-family: Roboto;
+			color: $fontGray;
+			font-family: "Roboto-Regular";
 			font-size: 14px;
 			font-weight: 400;
 		}
@@ -89,15 +84,14 @@
 }
 .delete::before {
 	content: "\1F7A8";
-    color: #ff0000;
+    color: $red;
     font-size: 17px;
 }
-
 .coupon {
 	margin-top: 20px;
 	p {
-		color: #333333;
-		font-family: Roboto;
+		color: $darkGray;
+		font-family: "Roboto-Regular";
 		font-size: 16px;
 		font-style: italic;
 		text-transform: uppercase;
@@ -107,16 +101,16 @@
 		width: 241px;
 		height: 35px;
 		border: 1px solid rgba(0, 0, 0, 0.07);
-		background-color: #ffffff;
+		background-color: $white;
 		padding-left: 8px;
 		margin-left: 10px;
 	}
 	button {
 		border: none;
 		margin-right: 20px;
-		background-color: #333333;
-		color: #ffffff;
-		font-family: Roboto;
+		background-color: $darkGray;
+		color: $white;
+		font-family: "Roboto-Regular";
 		font-size: 14px;
 		font-weight: 400;
 		text-transform: uppercase;
@@ -126,8 +120,8 @@
 	a {
 		float: right;
 		margin: 7px 20px 0 0;
-		color: #333333;
-		font-family: Roboto;
+		color: $darkGray;
+		font-family: "Roboto-Regular";
 		font-size: 14px;
 		font-style: italic;
 		text-decoration: underline;

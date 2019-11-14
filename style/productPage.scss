@@ -1,15 +1,9 @@
-@import "color";
-@import "mixin";
-
 @import "main";
 @import "sidebarTagsCart";
 @import "productsBlok";
 @import "category";
 
 
-.productElement {
-
-}
 .productSlider {
     margin-right: 45px;
 }
@@ -22,7 +16,6 @@
         height: 370px; 
     }
 }
-
 .miniImage {
     display: flex;
 }
@@ -34,7 +27,6 @@
         &+img {
             margin-left: 30px;
         }
-
     }
 }
 .prevPage,
@@ -47,7 +39,7 @@
 }
 .productInfo {
     color: $fontGray;
-    font-family: Roboto;
+    font-family:  "Roboto-Regular";
     font-size: 12px;
     font-weight: 400;
     a {
@@ -71,15 +63,13 @@
         font-size: 24px;
         font-weight: 700;
         text-transform: uppercase;
-    }
-    
+    }  
 }
-
 .productTitle_prise {
     margin-top: 30px;
     &>span {
         color: $black;
-        font-family: "Roboto - Medium Italic";
+        font-family: "Roboto-MediumItalic";
         font-size: 22px;
         text-transform: uppercase;
     }
@@ -96,7 +86,7 @@
     }
 }
 .activeSize {
-    color: red;
+    color: $red;
 }
 .productLength {
     span {
@@ -105,7 +95,7 @@
 }
 .productInfo_quantity {
     color: $darkGray;
-    font-family: Roboto;
+    font-family:  "Roboto-Regular";
     font-size: 12px;
     font-weight: 400;
     position: relative;
@@ -123,7 +113,6 @@
         background-color: $white;
         padding-left: 12px;
         margin: 5px 0 0 10px;
-        
     }
     input[type="number"]::-webkit-outer-spin-button,
     input[type="number"]::-webkit-inner-spin-button {
@@ -138,7 +127,7 @@
     background-color: $miniCartColor; 
     padding: 18px 15px;
     color: $white;
-    font-family: Roboto;
+    font-family:  "Roboto-Regular";
     font-size: 16px;
     font-weight: 400;
     text-transform: uppercase;
@@ -151,7 +140,7 @@
     span {
         cursor: pointer;
         color: $darkGray;
-        font-family: Roboto;
+        font-family:  "Roboto-Regular";
         font-size: 12px;
         font-weight: 400;
         text-transform: uppercase;

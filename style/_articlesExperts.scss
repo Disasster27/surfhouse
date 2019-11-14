@@ -1,4 +1,4 @@
-@import "color";
+
 @import "mixin";
 
 .articlesExperts {
@@ -7,14 +7,14 @@
 	background-color: $white;
 	h3 {
 		color: $black;
-		font-family: "Roboto - Black Italic";
+		font-family: "Roboto-BlackItalic";
 		font-size: 24px;
 		font-weight: 400;
 		margin-bottom: 30px;
 	}
 	&>a>p {
 		color: $black;
-		font-family: "Roboto - Black Italic";
+		font-family: "Roboto-Black Italic";
 		font-size: 14px;
 		font-weight: 900;
 		cursor: pointer;
@@ -24,8 +24,8 @@
 }
 .assideReview {
 	p {
-		color: #555555;
-		font-family: Roboto;
+		color: $fontGray;
+		font-family: "Raleway-Regular";
 		font-size: 14px;
 		font-weight: 400;
 		margin-bottom: 20px;

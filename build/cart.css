@@ -68,7 +68,7 @@ header nav {
   color: #aaaaaa;
   font-size: 12px; }
   .navigation a {
-    font-family: Roboto;
+    font-family: "Roboto-Regular";
     font-weight: 400;
     color: #aaaaaa; }
     .navigation a:hover {
@@ -106,7 +106,8 @@ main {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 100%; }
+  max-width: 100%;
+  background-color: #f8f8f8; }
 
 .menu {
   width: 270px;
@@ -115,7 +116,7 @@ main {
   .menu li {
     padding-left: 40px;
     color: #000000;
-    font-family: "Roboto - Black";
+    font-family: "Roboto-Black";
     font-size: 14px;
     font-weight: 400;
     line-height: 36px;
@@ -135,7 +136,7 @@ main {
   padding: 30px 0 0 40px; }
   .headMenu p {
     color: #ffffff;
-    font-family: Roboto;
+    font-family: "Roboto-Regular";
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase; }
@@ -169,9 +170,8 @@ main {
 .banner {
   width: 270px;
   height: 300px;
-  background-color: #e0e0e0;
+  background-color: #eaeaea;
   color: #333333;
-  font-family: "Raleway - Heavy";
   font-size: 36px;
   font-weight: 700;
   font-style: italic;
@@ -179,6 +179,7 @@ main {
   position: relative;
   margin-bottom: 30px; }
   .banner p {
+    font-family: "Raleway-Heavy";
     position: absolute;
     width: 109px;
     bottom: 70px;
@@ -239,16 +240,16 @@ main {
 
 /*-----FOOTER-----*/
 footer {
-  background-color: #373737; }
+  background-color: #2e2e2e; }
   footer p,
   footer li {
-    font-family: Roboto;
+    font-family: "Roboto-Regular";
     font-size: 12px;
     font-weight: 400;
     line-height: 18px; }
   footer span + a {
     color: #ffffff;
-    font-family: Roboto;
+    font-family: "Roboto-Regular";
     font-size: 14px;
     font-weight: 400; }
     footer span + a:last-child {
@@ -267,7 +268,7 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between; }
   .footer_wrapper h3 {
-    font-family: "Raleway - Extra Bold";
+    font-family: "Ralewa -ExtraBold";
     font-size: 18px;
     font-weight: 400; }
   .footer_wrapper ul {
@@ -284,35 +285,35 @@ footer {
   .newsletter input[type="email"]::-webkit-input-placeholder {
     opacity: 0.45;
     color: #333333;
-    font-family: Roboto;
+    font-family: "Roboto-Regular";
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase; }
   .newsletter input[type="email"]::-moz-placeholder {
     opacity: 0.45;
     color: #333333;
-    font-family: Roboto;
+    font-family: "Roboto-Regular";
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase; }
   .newsletter input[type="email"]:-ms-input-placeholder {
     opacity: 0.45;
     color: #333333;
-    font-family: Roboto;
+    font-family: "Roboto-Regular";
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase; }
   .newsletter input[type="email"]::-ms-input-placeholder {
     opacity: 0.45;
     color: #333333;
-    font-family: Roboto;
+    font-family: "Roboto-Regular";
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase; }
   .newsletter input[type="email"]::placeholder {
     opacity: 0.45;
     color: #333333;
-    font-family: Roboto;
+    font-family: "Roboto-Regular";
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase; }
@@ -324,7 +325,7 @@ footer {
   margin-left: -4px;
   padding-top: 3px;
   color: #ffffff;
-  font-family: Roboto;
+  font-family: "Roboto-Regular";
   font-size: 12px;
   font-weight: 400;
   text-transform: uppercase;
@@ -345,14 +346,56 @@ footer {
   background-color: #333333; }
   .copyright p {
     display: inline-block;
-    color: #dad9d9; }
+    color: #eaeaea; }
+
+@font-face {
+  font-family: "Raleway-Regular";
+  src: url("../fonts/raleway/raleway-regular/Raleway-Regular.eot");
+  src: url("../fonts/raleway/raleway-regular/Raleway-Regular.eot") format("embedded-opentype"), url("../fonts/raleway/raleway-regular/Raleway-Regular.woff") format("woff"), url("../fonts/raleway/raleway-regular/Raleway-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "Raleway-Heavy";
+  src: url("../fonts/raleway/raleway-heavy/Raleway-Heavy.eot");
+  src: url("../fonts/raleway/raleway-heavy/Raleway-Heavy.eot") format("embedded-opentype"), url("../fonts/raleway/raleway-heavy/Raleway-Heavy.woff") format("woff"), url("../fonts/raleway/raleway-heavy/Raleway-Heavy.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "Raleway-ExtraBold";
+  src: url("../fonts/raleway/raleway-ExtraBold/Raleway-ExtraBold.eot");
+  src: url("../fonts/raleway/raleway-ExtraBold/Raleway-ExtraBold.eot") format("embedded-opentype"), url("../fonts/raleway/raleway-ExtraBold/Raleway-ExtraBold.woff") format("woff"), url("../fonts/raleway/raleway-ExtraBold/Raleway-ExtraBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../fonts/roboto/roboto-regular/Roboto-Regular.eot");
+  src: url("../fonts/roboto/roboto-regular/Roboto-Regular.eot") format("embedded-opentype"), url("../fonts/roboto/roboto-regular/Roboto-Regular.woff") format("woff"), url("../fonts/roboto/roboto-regular/Roboto-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "Roboto-BlackItalic";
+  src: url("../fonts/roboto/roboto-blackItalic/Roboto-BlackItalic.eot");
+  src: url("../fonts/roboto/roboto-blackItalic/Roboto-BlackItalic.eot") format("embedded-opentype"), url("../fonts/roboto/roboto-blackItalic/Roboto-BlackItalic.woff") format("woff"), url("../fonts/roboto/roboto-blackItalic/Roboto-BlackItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "Roboto-Black";
+  src: url("../fonts/roboto/roboto-black/Roboto-Black.eot");
+  src: url("../fonts/roboto/roboto-black/Roboto-Black.eot") format("embedded-opentype"), url("../fonts/roboto/roboto-black/Roboto-Black.woff") format("woff"), url("../fonts/roboto/roboto-black/Roboto-Black.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
 
 .products {
   background-color: #f8f8f8; }
 
 .productsBlok_named {
   color: #707070;
-  font-family: "Roboto - Black Italic";
+  font-family: "Roboto-BlackItalic";
   font-size: 22px;
   font-weight: 400;
   text-transform: uppercase;
@@ -408,7 +451,7 @@ footer {
   height: 70px;
   padding: 15px 15px 0 25px;
   color: #333333;
-  font-family: "Roboto - Black Italic";
+  font-family: "Roboto-BlackItalic";
   font-weight: 400;
   line-height: 18px; }
   .product_title div {
@@ -446,7 +489,7 @@ footer {
   padding: 10px 5px 0 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: Roboto;
+  font-family: "Roboto-Regular";
   font-size: 9px;
   font-weight: 400;
   text-transform: uppercase; }
@@ -507,7 +550,7 @@ footer {
   text-transform: uppercase;
   height: 390px; }
   .reviewCart h4 {
-    font-family: "Roboto - Black";
+    font-family: "Roboto-Black";
     font-size: 16px;
     text-align: center; }
   .reviewCart button {
@@ -521,7 +564,8 @@ footer {
     cursor: pointer; }
 
 .reviewCart_info {
-  margin: 50px 0 60px 0; }
+  margin: 50px 0 60px 0;
+  font-family: "Roboto-Black"; }
   .reviewCart_info p {
     text-align: left; }
     .reviewCart_info p span {
@@ -529,7 +573,6 @@ footer {
     .reviewCart_info p + p {
       padding-top: 30px; }
     .reviewCart_info p:last-child {
-      font-family: "Roboto - Black";
       font-size: 16px; }
 
 .order_step {
@@ -540,7 +583,7 @@ footer {
     display: -ms-flexbox;
     display: flex;
     color: #aaaaaa;
-    font-family: Roboto;
+    font-family: "Raleway-Regular";
     font-size: 24px;
     font-weight: 400;
     text-transform: uppercase; }
@@ -555,10 +598,10 @@ footer {
   .productCart table {
     width: 100%; }
     .productCart table tr {
-      border-bottom: 1px solid #e6e6e6; }
+      border-bottom: 1px solid #eaeaea; }
     .productCart table th {
       color: #333333;
-      font-family: "Roboto - Medium Italic";
+      font-family: "Roboto-BlackItalic";
       font-size: 12px;
       font-weight: 400;
       text-transform: uppercase;
@@ -572,7 +615,7 @@ footer {
     .productCart table p {
       width: 186px;
       color: #707070;
-      font-family: Roboto;
+      font-family: "Roboto-Regular";
       font-size: 12px;
       font-weight: 400;
       line-height: 16px;
@@ -599,7 +642,7 @@ footer {
     .productCart table input[type="number"] {
       width: 36px;
       height: 28px;
-      border: 1px solid #efefef;
+      border: 1px solid #eaeaea;
       background-color: #ffffff;
       margin: 0 7px; }
     .productCart table input[type="number"]::-webkit-outer-spin-button,
@@ -612,8 +655,8 @@ footer {
       padding: 3px 5px;
       cursor: pointer; }
     .productCart table span {
-      color: #666669;
-      font-family: Roboto;
+      color: #707070;
+      font-family: "Roboto-Regular";
       font-size: 14px;
       font-weight: 400; }
 
@@ -631,7 +674,7 @@ footer {
   margin-top: 20px; }
   .coupon p {
     color: #333333;
-    font-family: Roboto;
+    font-family: "Roboto-Regular";
     font-size: 16px;
     font-style: italic;
     text-transform: uppercase;
@@ -648,7 +691,7 @@ footer {
     margin-right: 20px;
     background-color: #333333;
     color: #ffffff;
-    font-family: Roboto;
+    font-family: "Roboto-Regular";
     font-size: 14px;
     font-weight: 400;
     text-transform: uppercase;
@@ -658,7 +701,7 @@ footer {
     float: right;
     margin: 7px 20px 0 0;
     color: #333333;
-    font-family: Roboto;
+    font-family: "Roboto-Regular";
     font-size: 14px;
     font-style: italic;
     text-decoration: underline; }

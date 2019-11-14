@@ -1,25 +1,19 @@
-@import "color";
-@import "mixin";
-
 @import "main";
 @import "articlesExperts";
 @import "cartStep";
 
-.content {
-    background-color: $mainGray;
-}
 main {
     margin: 60px 0 120px 0;
 }
-
 .auth_box {
     padding: 0 15px ;
+    padding-bottom: 60px;
+    border-bottom: 1px solid $backgroundItemGray;
 }
 .auth {
-    color: #333333;
-    font-family: Roboto;
+    color: $darkGray;
     height: 390px;
-    font-family: Roboto;
+    font-family: "Roboto-Regular";
     font-size: 12px;
     font-weight: 400;
     p {
@@ -31,7 +25,7 @@ main {
         text-transform: uppercase;
         margin-bottom: 15px;
         span {
-            font-family: "Roboto - Black";
+            font-family: "Roboto-Black";
             font-size: 36px;
             font-weight: 400; 
         }
@@ -57,8 +51,8 @@ main {
     flex: 1;
 }
 .selectReg {
-    border-top: 1px solid #efefef;
-    border-bottom: 1px solid #efefef;
+    border-top: 1px solid $backgroundItemGray;
+    border-bottom: 1px solid $backgroundItemGray;
     padding-top: 20px;
     input {
         display: none;
@@ -75,9 +69,9 @@ main {
 	        left: 0;
 	        width: 12px;
 	        height: 12px;
-	        border: 1px solid #CDD1DA;
+	        border: 1px solid $backgroundItemGray;
 	        border-radius: 50%;
-            background: #FFF;
+            background: $white;
             box-sizing: border-box;
         }  
         &::after {
@@ -98,17 +92,13 @@ main {
         opacity: 1;
     }  
 }
-
-
-
-
 .auth_but {
     width: 200px;
     border: none;
-    background-color: #333333;
+    background-color: $darkGray;
     padding: 14px 0;
-    color: #ffffff;
-    font-family: Roboto;
+    color: $white;
+    font-family: "Roboto-Regular";
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
@@ -124,8 +114,8 @@ main {
     form {
         padding: 17px 0;
         label {
-            color: #353535;
-            font-family: Roboto;
+            color: $darkGray;
+            font-family: "Roboto-Regular";
             font-size: 12px;
             font-weight: 700;
             line-height: 16px;
@@ -133,55 +123,37 @@ main {
         input {
             width: 245px;
             height: 27px;
-            border: 1px solid #efefef;
-            background-color: #ffffff;
+            border: 1px solid $backgroundItemGray;
+            background-color: $white;
             padding-left: 10px;
             margin: 15px 0 10px 0;
         }
-        
-
-    }
-    
+    }  
 }
 .forgotPass {
     span {
-        font-family: Roboto;
+        font-family: "Roboto-Regular";
         font-size: 11px;
         font-weight: 400;
         line-height: 18px;
     }
 }
 .red {
-    color: #ff0000;;
+    color: $red;;
 }
 .hint {
-    color: #333333;
-    font-family: Roboto;
+    color: $darkGray;
+    font-family: "Roboto-Regular";
     font-size: 12px;
     font-style: italic;
     text-decoration: underline;
     float: right;
     cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 .checkout_form {
-    
-    
     label {
-        color: #333333;
-        font-family: Roboto;
+        color: $darkGray;
+        font-family: "Roboto-Regular";
         font-size: 12px;
         font-weight: 400;
         text-transform: uppercase;
@@ -189,13 +161,12 @@ main {
     p {
         margin-top: 32px;
         width: 250px;
-        
     }
     input,
     select {
         height: 30px;
         border: 1px solid rgba(0, 0, 0, 0.1);
-        background-color: #ffffff;
+        background-color: $white;
         padding-left: 7px;
         margin-top: 10px;
     }
@@ -207,8 +178,8 @@ main {
         width: 115px;
     }
     input::placeholder {
-        color: #aaaaaa;
-        font-family: Roboto;
+        color: $navigationGray;
+        font-family: "Roboto-Regular";
         font-size: 12px;
         font-weight: 400;
     }
@@ -221,11 +192,10 @@ main {
     input[name="ccv"] {
         width: 150px;
     }
-
 }
 .remember_address {
-    color: #333333;
-    font-family: Roboto;
+    color: $darkGray;
+    font-family: "Roboto-Regular";
     font-size: 12px;
     font-weight: 400;
     text-transform: uppercase;
@@ -235,7 +205,6 @@ main {
         margin-left: 42px;
     }
     .checkbox__text {
-        // display: inline-block;
         cursor: pointer;
         position: relative;
         padding-left: 30px;
@@ -245,7 +214,7 @@ main {
             left: -10px;
             width: 30px;
             height: 30px;
-            background-color: #26d2fc;
+            background-color: $menuColor;
         }
     }
     input {
@@ -253,15 +222,14 @@ main {
     }
     input:checked + .checkbox__text::before {
         content: "\2714";
-        // text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
         font-size: 20px;
         color: $white;
         text-align: center;
         line-height: 30px;
     }
     &>span {
-        color: #333333;
-        font-family: Roboto;
+        color: $darkGray;
+        font-family: "Roboto-Regular";
         font-size: 12px;
         font-style: italic;
         text-transform: capitalize;
@@ -291,15 +259,13 @@ main {
     max-width: (1/3*100%);
     .bancCard {
         margin-top: 30px;
-        // padding-left: 20px ; 
         display: flex;
         justify-content: center;
         img {
             width: 45px;
             height: 30px;
         }
-    }
-    
+    } 
 }
 .formBlock {
     display: flex;
@@ -311,8 +277,8 @@ main {
 .placeOrder {
     p {
         max-width: 550px;
-        color: #333333;
-        font-family: Roboto;
+        color: $darkGray;
+        font-family: "Roboto-Regular";
         font-size: 12px;
         font-weight: 400;
     }
