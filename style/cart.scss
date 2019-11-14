@@ -1,0 +1,135 @@
+@import "color";
+@import "mixin";
+
+@import "main";
+@import "productsBlok";
+@import "cartStep";
+
+
+.content {
+	background-color: $mainGray;
+}
+.productCart {
+	width: 100%;
+	table {
+		width: 100%;
+		tr {
+			border-bottom: 1px solid #e6e6e6;
+		}
+		th {
+		color: #333333;
+		font-family: "Roboto - Medium Italic";
+		font-size: 12px;
+		font-weight: 400;
+		text-transform: uppercase;
+		text-align: left;
+		}
+		td {
+		}
+		.productCart_img {
+			display: inline-block;
+			width: 70px;
+			height: 110px;
+			background-color: #eaeaea;
+			margin: 15px 15px 10px 10px;
+		}
+		p {
+			width: 186px;
+			color: #707070;
+			font-family: Roboto;
+			font-size: 12px;
+			font-weight: 400;
+			line-height: 16px;
+			margin: 0 0 10px 0;;
+		}
+		.socialMenu_cart {
+			display: flex;
+			margin-bottom: 20px;
+			li {
+				margin-right: 20px;
+			}
+			i {
+				color: #333333;
+			}
+		}
+		.cart_quantity {
+			display: flex;
+			align-items: center;
+		}
+		input[type="number"] {
+			width: 36px;
+			height: 28px;
+			border: 1px solid #efefef;
+			background-color: #ffffff;
+			margin: 0 7px;
+		}
+		input[type="number"]::-webkit-outer-spin-button,
+		input[type="number"]::-webkit-inner-spin-button {
+			-webkit-appearance: none;
+			margin: 0;
+		}
+		.minQty,
+		.plusQty {
+			background-color: $white;
+			padding: 3px 5px;
+			cursor: pointer;
+		}
+		span {
+			color: #666669;
+			font-family: Roboto;
+			font-size: 14px;
+			font-weight: 400;
+		}
+	}
+}
+.delete {
+	width: 14px;
+	height: 15px;
+	cursor: pointer;
+}
+.delete::before {
+	content: "\1F7A8";
+    color: #ff0000;
+    font-size: 17px;
+}
+
+.coupon {
+	margin-top: 20px;
+	p {
+		color: #333333;
+		font-family: Roboto;
+		font-size: 16px;
+		font-style: italic;
+		text-transform: uppercase;
+		padding-bottom: 15px;
+	}
+	input {
+		width: 241px;
+		height: 35px;
+		border: 1px solid rgba(0, 0, 0, 0.07);
+		background-color: #ffffff;
+		padding-left: 8px;
+		margin-left: 10px;
+	}
+	button {
+		border: none;
+		margin-right: 20px;
+		background-color: #333333;
+		color: #ffffff;
+		font-family: Roboto;
+		font-size: 14px;
+		font-weight: 400;
+		text-transform: uppercase;
+		padding: 13px 17px;
+		cursor: pointer;
+	}
+	a {
+		float: right;
+		margin: 7px 20px 0 0;
+		color: #333333;
+		font-family: Roboto;
+		font-size: 14px;
+		font-style: italic;
+		text-decoration: underline;
+	}
+}

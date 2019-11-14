@@ -1,0 +1,120 @@
+@import "color";
+@import "mixin";
+
+@import "main";
+
+
+
+.header_map {
+	background-image: url(../image/maps.jpg);
+	height: 350px;
+	
+	nav {
+		background-color: RGBA(193, 193, 193, .3);
+	}
+	.socialMenu {
+	}
+	
+}
+
+.contact_blok {
+	margin-top: 90px;
+	display: flex;
+}
+
+.contact_form {
+	padding-right: 25px;
+	border-right: 1px solid RGBA(193, 193, 193, .5);
+	font-family: Roboto;
+		font-size: 12px;
+		font-weight: 400;
+	label {
+		color: $darkGray;
+//		font-family: Roboto;
+//		font-size: 12px;
+//		font-weight: 400;
+		text-transform: uppercase;
+	}
+	input, 
+	textarea {
+		display: block;
+		width: 350px;
+		padding: 7px 0 7px 20px;
+		border: 1px solid #efefef;
+		background-color: $white;
+		margin: 10px 0 35px 0;
+		&::placeholder {
+			color: $navigationGray;
+//			font-family: Roboto;
+//			font-size: 12px;
+//			font-weight: 400;
+		}
+	}
+	textarea {
+		max-width: 350px;
+		height: 150px;
+	}
+}
+.contact_address {
+	color: $fontGray;
+	font-family: Roboto;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 14px;
+	padding-left: 25px;
+	p {
+		width: 160px;
+		margin-bottom: 10px;
+		&.point {
+			position: relative;
+			padding-left: 20px;
+		}
+	}
+	h3 {
+		color: $darkGray;
+		font-family: "Roboto - Black";
+		font-size: 18px;
+		margin-bottom: 15px;
+	}
+	a {
+		display: block;
+		color: $darkGray;
+		font-size: 16px;
+		line-height: 20.8px;
+		text-decoration: underline;
+		margin: 20px 0;
+		position: relative;
+		padding-left: 30px;
+		
+	}
+	a[href^="tel"] {
+		font-size: 20px;
+		text-decoration: none;
+	}
+	.hint {
+		color: $darkGray;
+		font-size: 14px;
+		width: 300px;
+	}
+}
+.mail::before,
+.tel::before,
+.point::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	height: 15px;
+}
+.point::before {
+	background-image: url(../image/point.png);
+	width: 14px;
+	height: 21px;
+}
+.tel::before {
+	background-image: url(../image/tel.png);
+	width: 15px;
+}
+.mail::before {
+	background-image: url(../image/mail.png);
+	width: 18px;
+}

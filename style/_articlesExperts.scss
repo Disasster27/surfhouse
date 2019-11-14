@@ -1,0 +1,36 @@
+@import "color";
+@import "mixin";
+
+.articlesExperts {
+	width: 270px;
+	padding: 30px;
+	background-color: $white;
+	h3 {
+		color: $black;
+		font-family: "Roboto - Black Italic";
+		font-size: 24px;
+		font-weight: 400;
+		margin-bottom: 30px;
+	}
+	&>a>p {
+		color: $black;
+		font-family: "Roboto - Black Italic";
+		font-size: 14px;
+		font-weight: 900;
+		cursor: pointer;
+		margin-top: 20px;
+		@include textShadow;
+	}
+}
+.assideReview {
+	p {
+		color: #555555;
+		font-family: Roboto;
+		font-size: 14px;
+		font-weight: 400;
+		margin-bottom: 20px;
+		&:hover {
+			 text-shadow: 0 0 3px $darkGray;
+		}
+	}
+}

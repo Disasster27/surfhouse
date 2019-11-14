@@ -1,0 +1,60 @@
+@import "color";
+
+.reviewCart {
+	background-color: #fb4d01;
+	padding: 30px 20px;
+	color: #ffffff;
+	font-family: Roboto;
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+	height: 390px;
+	h4 {
+		font-family: "Roboto - Black";
+		font-size: 16px;
+		text-align: center;
+	}
+	button {
+		border: none;
+		width: 230px;
+		background-color: #333333;
+		font-size: 28px;
+		color: #ffffff;
+		padding: 10px 0;
+		text-transform: uppercase;
+		cursor: pointer;
+	}
+	
+	
+}
+.reviewCart_info {
+	margin: 50px 0 60px 0;
+	p {
+		text-align: left;
+		span {
+			float: right;
+		}
+		&+p {
+			padding-top: 30px;
+		}
+		&:last-child {
+			font-family: "Roboto - Black";
+			font-size: 16px;
+		}
+	}
+}
+
+.order_step {
+	padding-bottom: 30px;
+	ul {
+		display: flex;
+		color: #aaaaaa;
+		font-family: Roboto;
+		font-size: 24px;
+		font-weight: 400;
+		text-transform: uppercase;
+		li {
+			padding-left: 75px;
+		}
+	}
+}

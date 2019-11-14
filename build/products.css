@@ -87,7 +87,8 @@ main {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  max-width: 100%; }
 
 .sidebar {
   -webkit-box-flex: 1;
@@ -104,7 +105,8 @@ main {
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  max-width: 100%; }
 
 .menu {
   width: 270px;
@@ -357,6 +359,7 @@ footer {
   display: -ms-flexbox;
   display: flex; }
   .auth div {
+    display: inline-block;
     width: 135px;
     padding: 10px;
     text-align: center;
@@ -450,12 +453,13 @@ footer {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
-  .miniCart_button div {
+  .miniCart_button a {
+    display: inline-block;
     width: 135px;
     padding: 10px;
     text-align: center;
     cursor: pointer; }
-    .miniCart_button div:hover {
+    .miniCart_button a:hover {
       background-color: #e24602; }
   .miniCart_button p {
     color: #ffffff;

@@ -9,6 +9,7 @@
    }
 }
 @mixin miniCartDIV {
+	display: inline-block;
 	width: 135px;
 	padding: 10px;
 	text-align: center;

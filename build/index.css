@@ -87,7 +87,8 @@ main {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  max-width: 100%; }
 
 .sidebar {
   -webkit-box-flex: 1;
@@ -104,7 +105,8 @@ main {
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  max-width: 100%; }
 
 .menu {
   width: 270px;
@@ -456,11 +458,11 @@ body {
     font-style: italic;
     line-height: 14px; }
 
-.instaFeed {
+.instFeed {
   background-color: #eaeaea;
   padding: 25px 0 60px 0;
   text-align: center; }
-  .instaFeed p {
+  .instFeed p {
     color: #333333;
     font-family: "Roboto - Black Italic";
     font-size: 22px;
@@ -468,14 +470,14 @@ body {
     position: relative;
     display: inline-block;
     margin-bottom: 30px; }
-    .instaFeed p:before {
+    .instFeed p:before {
       content: "";
       width: 28px;
       height: 28px;
       background-image: url(../image/insta_icon.png);
       position: absolute;
       left: -36px; }
-  .instaFeed span {
+  .instFeed span {
     font-size: 18px; }
 
 .livello {
@@ -495,6 +497,7 @@ body {
   display: -ms-flexbox;
   display: flex; }
   .auth div {
+    display: inline-block;
     width: 135px;
     padding: 10px;
     text-align: center;
@@ -588,12 +591,13 @@ body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
-  .miniCart_button div {
+  .miniCart_button a {
+    display: inline-block;
     width: 135px;
     padding: 10px;
     text-align: center;
     cursor: pointer; }
-    .miniCart_button div:hover {
+    .miniCart_button a:hover {
       background-color: #e24602; }
   .miniCart_button p {
     color: #ffffff;

@@ -1,0 +1,146 @@
+@import "color";
+@import "mixin";
+
+.products {
+	background-color: $mainGray;
+}
+
+.productsBlok_named {
+	color: #707070;
+	font-family: "Roboto - Black Italic";
+	font-size: 22px;
+	font-weight: 400;
+	text-transform: uppercase;
+	display: inline-block;
+}
+.productsBlok_header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 25px 30px;
+}
+
+.products_new {
+	
+}
+.productArrow {
+	display: flex;
+	div {
+		padding: 10px;
+		cursor: pointer;
+		&:hover {
+		background-color: $backgroundItemGray;
+	}
+	}
+	
+}
+
+.productItem_dox {
+	flex-wrap: wrap;
+}
+.product_item {
+	padding: 10px;
+	background-color: $white;
+	display: inline-block;
+	margin-bottom: 30px;
+	position: relative;
+	&:hover {
+			box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16);
+		}
+	img {
+		display: block;
+		width: 250px;
+		height: 235px;
+		background-color: $backgroundItemGray;
+	}
+}
+.product_title {
+	height: 70px;
+	padding: 15px 15px 0 25px;
+	color: $darkGray;
+	font-family: "Roboto - Black Italic";
+	font-weight: 400;
+	line-height: 18px;
+	div{
+		display: flex;
+		justify-content: space-between;
+	}
+	p {
+			display: inline-block;
+			font-size: 14px;
+		}
+		span {
+			display: block;
+			font-size: 18px;
+		}
+}
+.product_subtitle {
+	p {
+		text-transform: uppercase;
+	}
+	span {
+		color: $darkMiniCartColor;
+		font-size: 14px;
+		text-decoration: line-through;
+		
+	}
+}
+
+
+.statusNew:after,
+.statusHot:after {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 46px;
+	height: 46px;
+	text-align: right;
+	padding: 10px 5px 0 0;
+	box-sizing: border-box;
+	font-family: Roboto;
+	font-size: 9px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+.statusNew:after {
+	content: "new";
+	background-image: url(../image/cornerRed.png);
+	color: $white;
+}
+.statusHot:after {
+	content: "hot";
+	background-image: url(../image/cornerYell.png);
+	color: #000000;
+}
+.productBox_sideArrow_blue,
+.productBox_sideArrow_yellow {
+	position: relative;
+	&::before {
+		z-index: 5;
+		@include productBox_sideArrow;
+		background-image: url(../image/arrow_sx.png);
+		
+	}
+	&::after {
+		@include productBox_sideArrow;
+		right: 0;
+		background-image: url(../image/arrow_dx.png);
+	}
+}
+.productBox_sideArrow_blue {
+	&::before,
+	&::after {
+		background-color: $menuColor;	
+	}
+	
+	
+}
+
+.productBox_sideArrow_yellow {
+	&::before,
+	&::after {
+		background-color: $darkYellow;	
+	}
+	
+	
+}
