@@ -29,6 +29,7 @@
 	padding: 15px 0 15px 80px;
 	position: "Raleway-Regular";
 	cursor: pointer;
+	position: relative;
 	&:hover {
 		background-color: $darkMiniCartColor;
 	}

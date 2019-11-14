@@ -442,7 +442,8 @@ footer {
           flex: 1;
   padding: 15px 0 15px 80px;
   position: "Raleway-Regular";
-  cursor: pointer; }
+  cursor: pointer;
+  position: relative; }
   .miniCart_totalPrise:hover {
     background-color: #e24602; }
   .miniCart_totalPrise:before {
